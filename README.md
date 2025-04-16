@@ -19,3 +19,4 @@ DocuMate is a VS Code extension that automatically extracts and uploads function
    // --documate.start(funcName)
    function funcName() { ... }
    // --documate.end(funcName)
+
