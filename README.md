@@ -17,10 +17,5 @@ DocuMate is a VS Code extension that automatically extracts and uploads function
 1. Add special comments to your JS files:
    ```js
    // --documate.start(funcName)
-   /**
-    * @description This function does something
-    * @returns string
-    * @author RV
-    */
    function funcName() { ... }
    // --documate.end(funcName)
