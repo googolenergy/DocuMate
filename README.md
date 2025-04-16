@@ -26,3 +26,89 @@ Download **DocuMate (v1.0.0)** from <a href="https://drive.google.com/file/d/1kV
    function funcName() { ... }
    // --documate.end(funcName)
 
+2. Writing the actual documentation with JSON:
+   ```json
+   {
+  "functions": [
+    {
+      "id": 1,
+      "library_id": 100,
+      "name": "calculateLapTime",
+      "description": "Calculates the total lap time by summing the three sector times.",
+      "return_type": "float",
+      "created_by": "max_verstappen",
+      "created_at": "2025-04-20T10:00:00Z"
+    }
+  ],
+  "parameters": [
+    {
+      "id": 1,
+      "function_id": 1,
+      "name": "sector1",
+      "type": "float",
+      "description": "Time in seconds for sector 1"
+    },
+    {
+      "id": 2,
+      "function_id": 1,
+      "name": "sector2",
+      "type": "float",
+      "description": "Time in seconds for sector 2"
+    },
+    {
+      "id": 3,
+      "function_id": 1,
+      "name": "sector3",
+      "type": "float",
+      "description": "Time in seconds for sector 3"
+    }
+  ],
+  "examples": [
+    {
+      "id": 1,
+      "function_id": 1,
+      "code": "calculateLapTime(30.5, 32.1, 28.7);",
+      "description": "Compute lap time for given sector splits"
+    }
+  ],
+  "developers": [
+    {
+      "id": 1,
+      "name": "Max Verstappen",
+      "email": "max.verstappen@redbullracing.com",
+      "username": "max_v"
+    }
+  ],
+  "tags": [
+    {
+      "id": 1,
+      "name": "performance"
+    },
+    {
+      "id": 2,
+      "name": "telemetry"
+    }
+  ],
+  "function_tags": [
+    {
+      "id": 1,
+      "function_id": 1,
+      "tag_id": 1
+    },
+    {
+      "id": 2,
+      "function_id": 1,
+      "tag_id": 2
+    }
+  ],
+  "libraries": [
+    {
+      "id": 100,
+      "name": "F1TelemetryLib",
+      "version": "2.3.1",
+      "description": "Utility library for processing F1 telemetry data."
+    }
+  ]
+}
+
+
