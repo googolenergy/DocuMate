@@ -115,15 +115,15 @@ Download **DocuMate (v1.0.0)** from <a href="https://drive.google.com/file/d/1kV
 ```
 ## Writing the documentation with JSON
 
-Create a file named `main.json` at the **root** of your project and paste in the JSON snippet shown above.
+Create a file named `docs.json` at the **root** of your project and paste in the JSON snippet shown above.
 
 ### How to use this JSON
 
 1. **Create the file**  
-   At your project’s root, add a file called `main.json`.
+   At your project’s root, add a file called `docs.json`.
 
 2. **Copy the sample**  
-   Copy the provided JSON object (the one under “Writing the actual documentation with JSON”) into `main.json`.
+   Copy the provided JSON object (the one under “Writing the actual documentation with JSON”) into `docs.json`.
 
 3. **Customize each section**  
    - **functions**: one object per function, including all fields (`id`, `library_id`, `name`, etc.).  
@@ -140,10 +140,10 @@ Create a file named `main.json` at the **root** of your project and paste in the
 
    The extension will:
    1. **Clear** all existing MongoDB collections.  
-   2. **Insert** every object from your `main.json` into its matching collection (`functions`, `parameters`, etc.).
+   2. **Insert** every object from your `docs.json` into its matching collection (`functions`, `parameters`, etc.).
 
 5. **Verify** in MongoDB Compass  
-   Open your `documateDB` and confirm that all seven collections are populated with your data.
+   Open your `docu-mate-db` and confirm that all seven collections are populated with your data.
 
 ---
 
