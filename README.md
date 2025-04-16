@@ -4,7 +4,7 @@ DocuMate is a VS Code extension that automatically extracts and uploads function
 ## Prerequisites:
 - <a href="https://code.visualstudio.com/" target="blank">Visual Studio Code</a>
 - <a href="https://nodejs.org/en/" target="blank">NodeJS</a>
-- MongoDB running locally on __mongodb://localhost:27017__
+- MongoDB running locally on **mongodb://localhost:27017**
 
 ## Features:
 - Scan all JS files for special doc tags.
