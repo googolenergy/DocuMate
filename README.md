@@ -21,11 +21,13 @@ Download **DocuMate (v1.0.0)** from <a href="https://drive.google.com/file/d/1kV
 ## Usage
 
 1. Add special comments to your JS files:
-   ```js
-   // --documate.start(funcName)
-   function funcName() { ... }
-   // --documate.end(funcName)
-   ```
+
+```js
+// --documate.start(funcName)
+function funcName() { ... }
+// --documate.end(funcName)
+```
+
 2. Writing the actual documentation with JSON:
 
 ```json
