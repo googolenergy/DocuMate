@@ -1,8 +1,8 @@
 # DocuMate
 
-<img src="./assets/documate_extension_display_logo.png" alt="DocuMate" width="250">
+<img src="./assets/documate_extension_display_logo.png" alt="DocuMate" width="200">
 
-DocuMate is a VS Code extension that automatically extracts and uploads function-level documentation from your JavaScript project into MongoDB. It parses comments between custom tags and stores function details, parameters, tags, and more in a database.
+**DocuMate** is a VS Code extension that automatically extracts and uploads function-level documentation from your JavaScript project into MongoDB. It parses comments between custom tags and stores function details, parameters, tags, and more in a database.
 
 ## Prerequisites:
 - <a href="https://code.visualstudio.com/" target="blank">Visual Studio Code</a>
