@@ -25,10 +25,11 @@ Download **DocuMate (v1.0.0)** from <a href="https://drive.google.com/file/d/1kV
    // --documate.start(funcName)
    function funcName() { ... }
    // --documate.end(funcName)
-
+   ```
 2. Writing the actual documentation with JSON:
-   ```json
-   {
+
+```json
+{
   "functions": [
     {
       "id": 1,
@@ -111,4 +112,39 @@ Download **DocuMate (v1.0.0)** from <a href="https://drive.google.com/file/d/1kV
   ]
 }
 
+```
+## Writing the documentation with JSON
 
+Create a file named `main.json` at the **root** of your project and paste in the JSON snippet shown above.
+
+### How to use this JSON
+
+1. **Create the file**  
+   At your project’s root, add a file called `main.json`.
+
+2. **Copy the sample**  
+   Copy the provided JSON object (the one under “Writing the actual documentation with JSON”) into `main.json`.
+
+3. **Customize each section**  
+   - **functions**: one object per function, including all fields (`id`, `library_id`, `name`, etc.).  
+   - **parameters**: list each parameter object, referencing `function_id`.  
+   - **examples**: add example usage objects with `code` and `description`.  
+   - **developers**: include developer profiles (`id`, `name`, `email`, `username`).  
+   - **tags**: define each tag with `id` and `name`.  
+   - **function_tags**: link functions to tags by `function_id` and `tag_id`.  
+   - **libraries**: describe each library (`id`, `name`, `version`, `description`).
+
+4. **Run the extension**  
+   - Open the Command Palette (`Ctrl+Shift+P` / `⌘+Shift+P`).  
+   - Type and select **Generate Documentation**.  
+
+   The extension will:
+   1. **Clear** all existing MongoDB collections.  
+   2. **Insert** every object from your `main.json` into its matching collection (`functions`, `parameters`, etc.).
+
+5. **Verify** in MongoDB Compass  
+   Open your `documateDB` and confirm that all seven collections are populated with your data.
+
+---
+
+That’s it! Just edit your JSON, run **Generate Documentation**, and your database stays in sync. 🚀  
