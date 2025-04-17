@@ -12,6 +12,9 @@
 ## Downloads:
 Download **DocuMate (v1.0.0)** from <a href="https://drive.google.com/file/d/1kV7xLrz04z5wD6kOXAFY3KgAZqTDcKyB/view?usp=sharing">here.</a>
 
+## Installation:
+`code --install-extension documate-1.0.0.vsix`
+
 ## Features:
 - Scan all JS files for special doc tags.
 - Extract 7 categories of documentation.
