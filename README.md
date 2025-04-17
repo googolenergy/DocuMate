@@ -149,3 +149,6 @@ Create a file named `docs.json` at the **root** of your project and paste in the
 
 5. **Verify** in MongoDB Compass  
    Open your `docu-mate-db` and confirm that all seven collections are populated with your data.  
+
+---
+Author: Abhiram A
