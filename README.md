@@ -7,7 +7,7 @@
 ## Prerequisites:
 - <a href="https://code.visualstudio.com/" target="blank">Visual Studio Code</a>
 - <a href="https://nodejs.org/en/" target="blank">NodeJS</a>
-- MongoDB running locally on **mongodb://localhost:27017**
+- MongoDB running locally on `mongodb://localhost:27017`
 
 ## Downloads:
 Download **DocuMate (v1.0.0)** from <a href="https://drive.google.com/file/d/1kV7xLrz04z5wD6kOXAFY3KgAZqTDcKyB/view?usp=sharing">here.</a>
