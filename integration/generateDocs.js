@@ -70,8 +70,7 @@ async function generateDocs() {
     sidebarHTML += `</ul></li>`;
   });
   sidebarHTML += `</ul></div>`;
-
-  // Build main docs content
+
   let mainContentHTML = `<div id="main-docs">`;
   functions.forEach(fn => {
     const params = paramMap[fn.id] || [];
@@ -108,10 +107,10 @@ async function generateDocs() {
   $('#content').html(finalHTML);
   fs.writeFileSync(HTML_PATH, $.html());
 
-  console.log("✅ Documentation generated successfully.");
+  console.log("Documentation generated successfully.");
   await client.close();
 }
 
 generateDocs().catch(err => {
-  console.error("❌ Error:", err);
+  console.error("Error:", err);
 });
